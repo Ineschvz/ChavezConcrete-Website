@@ -15,28 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-black text-white`}>
-        <header className="py-6">
-          <nav className="container">
-            <ul className="flex-gap-6">
-              <li>
-                <Link href= "/"> Home </Link>
-              </li>
-              <li>
-                <Link href= "/about"> About </Link>
-              </li>
-              <li>
-                <Link href= "/contact"> Contact </Link>
-              </li>
-              <li>
-                <Link href= "/services"> Services </Link>
-              </li>
-              <li>
-                <Link href= "/testimonials"> Reviews </Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
+        <Navbar/>
+        
         <main> {children} </main>
 
         <Footer />
