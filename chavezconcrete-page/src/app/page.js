@@ -1,8 +1,5 @@
 import Image from "next/image";
-import About from "./pages/aboutus"
-import Contact from "./pages/contact";
-import Services from "./pages/services";
-import Testimonials from "./pages/testimonials";
+
 
 
 export default function Home() {
@@ -13,11 +10,9 @@ export default function Home() {
           Welcome to Chavez Concrete
         </p>
       </div>
-      <About/>
-      <Contact/>
-      <Services/> 
-      <Testimonials/>
+
 
     </main>
   );
 }
+

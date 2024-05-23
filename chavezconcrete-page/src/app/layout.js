@@ -1,9 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./componets/navbar";
-import Footer from "./componets/footer"
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "./components/navbar"
+import Footer from "./components/footer";
+import Link from "next/link";
 
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Chavez Concrete Website",
@@ -13,10 +14,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar/>
-        {children}
-        <Footer/>
+      <body className={`${inter.className} bg-black text-white`}>
+        <header className="py-6">
+          <nav className="container">
+            <ul className="flex-gap-6">
+              <li>
+                <Link href= "/"> Home </Link>
+              </li>
+              <li>
+                <Link href= "/about"> About </Link>
+              </li>
+              <li>
+                <Link href= "/contact"> Contact </Link>
+              </li>
+              <li>
+                <Link href= "/services"> Services </Link>
+              </li>
+              <li>
+                <Link href= "/testimonials"> Reviews </Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main> {children} </main>
+
+        <Footer />
       </body>
     </html>
   );
