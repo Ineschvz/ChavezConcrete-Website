@@ -8,7 +8,7 @@
     return(
         <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center border-t-4">
             <div className="mb-4 md:mb-0">
               <a className="text-2xl font-bold">Chavez Concrete</a>
               <p className="mt-1">© 2024 Chavez Concrete. All rights reserved.</p>
@@ -18,6 +18,10 @@
                 <a className="hover:underline">Services</a>
                 <a className="hover:underline">Testimonials</a>
                 <a className="hover:underline">Contact</a>
+            </div>
+            <div className="flex">
+              <a className="hover:underline"> Facebook ICON</a>
+              <a className="hover:underline"> map ICON</a>
             </div>
           </div>
         </div>
