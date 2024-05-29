@@ -6,26 +6,46 @@
 
  const Footer = () =>{
     return(
-        <footer className="bg-gray-800 text-white py-6">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center border-t-4">
-            <div className="mb-4 md:mb-0">
-              <a className="text-2xl font-bold">Chavez Concrete</a>
-              <p className="mt-1">© 2024 Chavez Concrete. All rights reserved.</p>
-            </div>
-            <div className="flex space-x-4">
-                <a className="hover:underline">About Us</a>
-                <a className="hover:underline">Services</a>
-                <a className="hover:underline">Testimonials</a>
-                <a className="hover:underline">Contact</a>
-            </div>
-            <div className="flex">
-              <a className="hover:underline"> Facebook ICON</a>
-              <a className="hover:underline"> map ICON</a>
-            </div>
-          </div>
-        </div>
+        <footer className="flex space-x-4 footer bg-gray-800 text-white py-6">
+      <div>
+        <h6 className="footer-title">Click button!</h6>
+        
+ <button className="mt-6">
+                        <a href="/contact" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                            Contact Us
+                        </a>
+                    </button>
+      </div>
+
+      <div>
+        <li className="flex flex-col space-x-4">
+        <a className=" "> Navigate </a>
+        <Link href="/" legacyBehavior >
+          <a>Home</a>
+        </Link>
+        <Link href="/about" legacyBehavior >
+          <a>About</a>
+        </Link>
+        <Link href="/contact" legacyBehavior >
+          <a>Contact</a>
+        </Link>
+        <Link href="/services" legacyBehavior >
+          <a>Services</a>
+        </Link>
+        <Link href="/testimonials" legacyBehavior >
+          <a>Testimonials</a>
+        </Link>
+        </li>
+      </div>
+      <div>
+        Social
+      </div>
+      <div>
+        Map
+      </div>
       </footer>
+  
+    
     )
  } 
 
