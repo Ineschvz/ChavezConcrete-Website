@@ -3,6 +3,10 @@ import "./globals.css";
 import Navbar from "./components/navbar"
 import Footer from "./components/footer";
 import Link from "next/link";
+// import Head from 'next/head';
+import 'mapbox-gl/dist/mapbox-gl.css'; // Import Mapbox GL CSS
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'; // Import Mapbox Geocoder CSS if needed
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,31 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-black text-white`}>
-        <header className="py-6">
-          <nav className="container">
-            <ul className="flex-gap-6">
-              <li>
-                <Link href= "/"> Home </Link>
-              </li>
-              <li>
-                <Link href= "/about"> About </Link>
-              </li>
-              <li>
-                <Link href= "/contact"> Contact </Link>
-              </li>
-              <li>
-                <Link href= "/services"> Services </Link>
-              </li>
-              <li>
-                <Link href= "/testimonials"> Reviews </Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Navbar/>
 
         <main> {children} </main>
 
         <Footer />
+        <script src="https://smtpjs.com/v3/smtp.js"> 
+        </script>
       </body>
     </html>
   );

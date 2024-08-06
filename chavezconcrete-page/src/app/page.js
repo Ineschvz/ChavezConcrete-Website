@@ -1,18 +1,32 @@
 import Image from "next/image";
+import AboutUs from "./components/aboutus";
+import Sponsors from "./components/hompage-sponsors";
+import Slider from "./components/Slider"
+import RootLayout from "./layout";
+import Map from "./components/map";
+
 
 
 
 export default function Home() {
+  const accessToken = 'pk.eyJ1IjoiaW5lc2NodnowMSIsImEiOiJjbHhrdHZoM2YwNHh2MmtwdDA2amFxZnF6In0.euocNqqEdapzDmsAhj7MmA'
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-b from-black to-gray-800 text-gray-500">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black text-gray-500">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Welcome to Chavez Concrete
-        </p>
+    
       </div>
-
-
+      <div className=" w-full min-h-screen grid place-items-center">
+        <Slider/>
+      </div>
+      <div>
+      <AboutUs/>
+      </div>
+      <div>
+      <Sponsors/>
+      </div>
     </main>
   );
 }
 
+
+// bg-gradient-to-r from-[#cBbdba] to-[#a49d9b]

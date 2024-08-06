@@ -1,6 +1,15 @@
+@import url('https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css');
+
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
+
+.navbar {
+  position: relative; /* Or fixed if you want it to stay at the top */
+  z-index: 20; /* Ensure it is higher than the slideshow */
+ 
+}
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -27,7 +36,42 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
+  .text-balance { 
     text-wrap: balance;
   }
+}
+/* Add styles using Tailwind CSS classes or utilities */
+#app {
+  @apply h-full; /* Apply Tailwind utility classes to set height to 100% */
+}
+
+html,
+body {
+  @apply relative h-full; /* Apply Tailwind utility classes to set position to relative and height to 100% */
+  background-color: #eee; /* Set background color */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Swiper Styles */
+.swiper {
+  @apply w-full h-full; /* Apply Tailwind utility classes to set width and height to 100% */
+}
+
+.swiper-slide {
+  @apply text-center text-lg bg-white; /* Apply Tailwind utility classes for text alignment, font size, and background color */
+  /* Center slide text vertically */
+  @apply flex justify-center items-center; /* Apply Tailwind utility classes for flexbox alignment */
+}
+
+.swiper-slide img {
+  @apply block w-full h-full object-cover; /* Apply Tailwind utility classes for image display */
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  font-family: 'PT Sans', sans-serif;
 }
