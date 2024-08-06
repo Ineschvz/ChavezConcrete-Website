@@ -3,13 +3,13 @@ import React from "react"
 
 const AboutUs = () => {
     return (
-        <section className="bg-gray-100 py-12">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+        <section className="">
+                <div className=" ">
+        <div className="text-center space-y-4">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Welcome to Chavez Concrete
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Chavez Concrete is a mission, vision, and core values. We strive to create your vision. With a dedicated team and innovative solutions, we are committed to keep you all happy.
           </p>
           <div className="mt-6">

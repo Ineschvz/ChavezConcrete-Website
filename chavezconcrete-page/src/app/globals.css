@@ -1,6 +1,15 @@
+@import url('https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css');
+
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
+
+.navbar {
+  position: relative; /* Or fixed if you want it to stay at the top */
+  z-index: 20; /* Ensure it is higher than the slideshow */
+ 
+}
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -27,7 +36,7 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
+  .text-balance { 
     text-wrap: balance;
   }
 }
@@ -60,4 +69,9 @@ body {
 
 .swiper-slide img {
   @apply block w-full h-full object-cover; /* Apply Tailwind utility classes for image display */
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  font-family: 'PT Sans', sans-serif;
 }
