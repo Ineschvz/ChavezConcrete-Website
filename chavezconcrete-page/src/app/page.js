@@ -26,7 +26,7 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
 
 
 // bg-gradient-to-r from-[#cBbdba] to-[#a49d9b]
